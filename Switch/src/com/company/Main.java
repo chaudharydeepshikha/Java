@@ -21,5 +21,34 @@ public class Main {
                 System.out.println("The value is " + value + " default");
                 break;
         }
+
+        char myChar = 'G';
+
+        switch (myChar){
+            case 'A':
+                System.out.println("The character found is : " + myChar + " at case 1");
+                break;
+
+            case 'B':
+                System.out.println("The character found is : " + myChar + " at case 2");
+                break;
+
+            case 'C':
+                System.out.println("The character found is : " + myChar + " at case 3");
+                break;
+
+            case 'D':
+                System.out.println("The character found is : " + myChar + " at case 4");
+                break;
+
+            case 'E':
+                System.out.println("The character found is : " + myChar + " at case 5");
+                break;
+
+            default:
+                System.out.println("Character not found!");
+                break;
+
+        }
     }
 }
