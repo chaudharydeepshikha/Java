@@ -1,0 +1,25 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int value = 4;
+        switch (value){
+            case 1:
+                System.out.println("The value is " + value + " from 1");
+                break;
+
+            case 2:
+                System.out.println("The value is " + value + " from 2");
+                break;
+
+            case 3: case 4: case 5:
+                System.out.println("The value is " + value + " from 3, 4, 5");
+                break;
+
+            default:
+                System.out.println("The value is " + value + " default");
+                break;
+        }
+    }
+}
