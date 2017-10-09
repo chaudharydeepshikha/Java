@@ -22,7 +22,7 @@ public class Main {
                 break;
         }
 
-        char myChar = 'G';
+        char myChar = 'A';
 
         switch (myChar){
             case 'A':
@@ -49,6 +49,19 @@ public class Main {
                 System.out.println("Character not found!");
                 break;
 
+        }
+
+        String month = "January";
+        switch (month.toLowerCase()){
+            case "january":
+                System.out.println("January");
+                break;
+            case "February":
+                System.out.println("February");
+                break;
+            default:
+                System.out.println("Not sure");
+                break;
         }
     }
 }
