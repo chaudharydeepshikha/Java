@@ -10,4 +10,16 @@ public class Car {
     private String model;
     private String engine;
     private String colour;
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        if(model.equalsIgnoreCase("A4") || model.equals("XE")) {
+            this.model = model;
+        } else {
+            this.model = "Unknown";
+        }
+    }
 }
