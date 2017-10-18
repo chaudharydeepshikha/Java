@@ -28,6 +28,10 @@ public class Account {
         System.out.println("Phone number "+ phoneNumber);
     }
 
+    public Account(String customerName, String email, Integer phoneNumber) {
+        this(99999,20000, customerName, email, phoneNumber);
+    }
+
     public Integer getAccountNumber() {
         return accountNumber;
     }

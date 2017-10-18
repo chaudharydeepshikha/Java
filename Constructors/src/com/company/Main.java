@@ -4,11 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        Integer availableAccountBalance = 10000;
+        Account account = new Account();
 
-        Account account = new Account(123, 20000, "Ram Kumar", "Ram.Kumar@gmail.com", 123456789);
-
-//        account.setBalance(availableAccountBalance);
         System.out.println("Present balance is: "+ account.getBalance());
         Integer moneyToWithdraw = 2000;
         Boolean result = account.withdraw(moneyToWithdraw);
@@ -21,5 +18,20 @@ public class Main {
         }
         Integer balanceAftereDeposit = account.deposit(3000);
         System.out.println("Balance after depositing is:" + balanceAftereDeposit);
+
+        System.out.println("**********************************************");
+        Account newAccount = new Account("Rakesh", "Rakesh.kumar@gmail.com", 123456);
+        System.out.println(newAccount.getPhoneNumber() +" name "+ newAccount.getCustomerName());
+
+
+            System.out.println("**********************************************");
+            VipCustomer vipCustomer = new VipCustomer();
+            VipCustomer vipCustomer1 = new VipCustomer("Tamanna", 100);
+            System.out.println(vipCustomer1.getName());
+            System.out.println(vipCustomer1.getEmailAddress());
+
+            VipCustomer vipCustomer2 = new VipCustomer("Riya", 200, "Riya@email.com");
+            System.out.println(vipCustomer2.getName());
+            System.out.println(vipCustomer2.getEmailAddress());
     }
 }
