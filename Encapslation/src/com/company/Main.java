@@ -13,5 +13,14 @@ public class Main {
         player.loseHealth(damage);
         System.out.println("Remaining health : "+ player.healthRemaining());
 
+
+        Printer printer = new Printer(50,false);
+        System.out.println("Initial page count : "+printer.getNoOfPages());
+
+        int pagesPrinted = printer.printPages(4);
+        System.out.println("Pages printed was "+ pagesPrinted + " new total print count for printer is " + printer.getNoOfPages());
+
+        pagesPrinted = printer.printPages(1);
+        System.out.println("Pages printed was "+ pagesPrinted + " new total print count for printer is " + printer.getNoOfPages());
     }
 }
