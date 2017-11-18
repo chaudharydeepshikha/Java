@@ -11,8 +11,6 @@ public class Main {
         Case aCase = new Case("220B","Dell", "240",new Dimension(20,20,5));
 
         PC pc = new PC(motherboard,monitor,aCase);
-        pc.getMonitor().drawPixelAt(1500,1200, "red");
-        pc.getMotherboard().loadProgram("Windows 10");
-        pc.getaCase().pressPowerButton();
+        pc.powerUp();
     }
 }

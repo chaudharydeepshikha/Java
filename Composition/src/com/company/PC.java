@@ -14,15 +14,12 @@ public class PC {
         this.aCase = aCase;
     }
 
-    public Motherboard getMotherboard() {
-        return motherboard;
+    public void powerUp(){
+        aCase.pressPowerButton();
+        motherboard.loadProgram("Linux RHEL 7.0");
+        drawLogo();
     }
-
-    public Monitor getMonitor() {
-        return monitor;
-    }
-
-    public Case getaCase() {
-        return aCase;
+    private void drawLogo(){
+        monitor.drawPixelAt(1500, 50,"blue");
     }
 }
